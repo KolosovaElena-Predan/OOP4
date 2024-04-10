@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Этот файл добавлен вручную:
+    ПКМ на проекте (папка resources) > New > FXML файл
+    В результате автоматически создан fxml файл
+
+Вручную добавить класс с обработчиками:
+    Alt+Enter на WindowLogin (в fx:controller="com.example.multiwindow.WindowLogin") > Create class WindowLogin >
+     выбрать папку с другими исходниками (java\com\example\multiwindow) для сохранения
+-->
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="240.0" prefWidth="239.0" style="-fx-background-color: #F2DCF9; -fx-background-radius: 0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.chatbot.LoginWindow">
+   <children>
+        <Text fill="#3b1638" layoutX="27.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите ваше имя" textOrigin="CENTER">
+         <font>
+            <Font name="Microsoft YaHei UI" size="20.0" />
+         </font>
+      </Text>
+        <TextField fx:id="TextField_login" layoutX="24.0" layoutY="114.0" onKeyPressed="#onTextField_login_key_pressed" prefHeight="36.0" prefWidth="191.0" style="-fx-background-color: #FCF5FE;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+        <Label fx:id="Label_status" layoutX="118.4000015258789" layoutY="118.4000015258789" />
+   </children>
+</Pane>

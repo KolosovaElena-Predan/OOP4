@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="644.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.patient.MainController">
+   <children>
+       <TableView fx:id="table" editable="true" layoutX="37.0" layoutY="37.0" prefHeight="258.0" prefWidth="556.0" />
+   
+          <Label fx:id="welcomeText" layoutX="341.0" layoutY="350.0" />
+       <Button layoutX="227.0" layoutY="324.0" onAction="#onHelloButtonClick" text="Добавить строку" />
+      <TextField fx:id="id" layoutX="31.0" layoutY="381.0" />
+      <TextField fx:id="surname" layoutX="192.0" layoutY="381.0" />
+      <TextField fx:id="name" layoutX="350.0" layoutY="381.0" />
+      <TextField fx:id="patr" layoutX="31.0" layoutY="432.0" />
+      <TextField fx:id="year" layoutX="192.0" layoutY="432.0" />
+      <TextField fx:id="category" layoutX="350.0" layoutY="432.0" />
+      <Text fx:id="error" layoutX="33.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Button fx:id="del" layoutX="37.0" layoutY="508.0" mnemonicParsing="false" onAction="#onDel" text="Удалить строку с номером n" />
+      <Text layoutX="95.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id" />
+      <Text layoutX="242.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фамилия" />
+      <Text layoutX="414.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя" />
+      <Text layoutX="74.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Отчество" />
+      <Text layoutX="227.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Год рождения" />
+      <Text layoutX="384.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Категория граждан" />
+      <TextField fx:id="TF_n" layoutX="105.0" layoutY="545.0" prefHeight="26.0" prefWidth="106.0" />
+      <Text layoutX="51.0" layoutY="563.0" strokeType="OUTSIDE" strokeWidth="0.0" text="n:" />
+      <TextField fx:id="TF_change" layoutX="406.0" layoutY="546.0" />
+      <TextField fx:id="TF_n1" layoutX="341.0" layoutY="545.0" prefHeight="26.0" prefWidth="51.0" />
+      <Text layoutX="356.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="458.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Button layoutX="356.0" layoutY="495.0" onAction="#onChange" mnemonicParsing="false" text="Изменить значение в строке n" />
+      <TextField fx:id="TF_m" layoutX="342.0" layoutY="593.0" prefHeight="26.0" prefWidth="50.0" />
+   </children>
+</AnchorPane>
